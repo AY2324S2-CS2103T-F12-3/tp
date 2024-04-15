@@ -11,7 +11,7 @@ Hi Tutors! A warm welcome to our user guide, your companion for navigating and f
 - [Features](#features)
   - [Add new students: `add`](#adding-new-students--add)
   - [Add new parents: `addp`](#adding-new-parents--addp)
-  - [Edit student's details: `edit`](#editing-a-students-details--edit)
+  - [Edit student's details: `edit`](#editing-a-persons-details--edit)
   - [Delete student: `delete`](#deleting-existing-students--delete)
   - [Find certain student: `find`](#finding-certain-students--find)
   - [Add events: `event`](#adding-events--event)
@@ -19,10 +19,10 @@ Hi Tutors! A warm welcome to our user guide, your companion for navigating and f
   - [Clear all entries: `clear`](#clearing-all-entries--clear)
   - [List all persons](#listing-all-persons--list)
   - [Exit: `exit`](#exiting-the-program--exit)
-  - [Comming Soon in next update: `schedule`](#comming-soon--schedule)
+  - [Coming Soon in next update: `schedule`](#coming-soon-in-next-update--schedule)
 - [FAQ](#faq)
 - [Known Issues](#known-issues)
-- [Command Summay](#command-summary)
+- [Command Summary](#command-summary)
 
 ---
 
@@ -90,7 +90,7 @@ Format: `add n/STUDENT_NAME p/PHONE_NUMBER e/EMAIL_ADDRESS a/ADDRESS lvl/EDUCATI
 
 <div markdown="span" class="alert alert-success">
 **:bulb: Tip:**<br>
-A student can have 1 or more subjects.
+A student can have any number of subjects.
 </div>
 
 **Examples:**
@@ -205,7 +205,7 @@ User input: `delete 3` → Johnsy Boy will be deleted.
 Below are some constraints to follow when inputting parameters.
 <br>
 **Constraints:**
-<br>* For `LIST_NUMBER`, the input **must be a positive integer** 1, 2, 3, …​, and the input must be a number not greater than the size of the list.
+<br>* For `LIST_NUMBER`, the input **must be a positive integer** (1, 2, 3, …​), and the input must be a number not greater than the size of the list.
 <br>  * E.g. if the list contains 3 people, inputting `4` will print an error message.
 </div>
 
@@ -301,7 +301,7 @@ If your changes to the data file makes its format invalid, TutorPro will discard
 Furthermore, certain edits can cause TutorPro to behave in unexpected ways (e.g., if a value entered is outside of the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 </div>
 
-### Comming Soon in next update : `schedule`
+### Coming Soon in next update : `schedule`
 
 Lists out events and reminders that occur in the incoming specified number of days.
 If no number of days is specified, events and reminders that occur in the next 14 days will be listed.
@@ -320,7 +320,8 @@ Format: `schedule [NUMBER_OF_DAYS]`
 ## [FAQ](#table-of-contents)
 
 **Q**: How do I transfer my data to another Computer?<br>
-**A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous AddressBook home folder.
+**A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous AddressBook home folder.<br>
+
 **Q**: Error message says input cannot be blank but my input is not blank! What's wrong with my input?<br>
 ![image](https://github.com/agreatdayy/tp/assets/104555494/9da46b39-4942-414d-b9f1-4c9845555575)
 **A**: Currently, TutorPro only takes in commands with ASCII characters. Please ensure that your input command only contains ASCII characters.
@@ -336,7 +337,7 @@ Format: `schedule [NUMBER_OF_DAYS]`
 ## [Command summary](#table-of-contents)
 
 | Action         | Format, Examples                                                                                                                                                                                                           |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Add**        | `add STUDENT_NAME p/PHONE_NUMBER a/ADDRESS lvl/EDUCATION_LEVEL [sub/SUBJECT-GRADE]… [t/TAG]…​` <br> e.g. `add John Doe p/98765432 e/johndoe@gmail.com a/Clementi Ave 123, Blk 321 #10-234 lvl/p5 sub/Math-B sub/Science-B` |
 | **Add parent** | `addp PARENT_NAME p/PHONE_NUMBER a/ADDRESS [t/TAG]…​` <br> e.g. `addp n/Jonny Doe p/98765432 e/jonnyd@gmail.com a/Clementi Ave 123, Blk 321, #12-345`                                                                      |
 | **Clear**      | `clear`                                                                                                                                                                                                                    |
@@ -347,3 +348,4 @@ Format: `schedule [NUMBER_OF_DAYS]`
 | **Help**       | `help`                                                                                                                                                                                                                     |
 | **Event**      | `event n/NAME at/TIME h/HOURS [t/TAG]...` <br> e.g. `event n/John Doe science tutoring at/2024-10-10 h/1`                                                                                                                  |
 | **Remind**     | `remind n/DESCRIPTION at/TIME t/TAG` <br> e.g. `remind n/Bob uni app deadline at/2024-03-04 12:00 t/urgent`                                                                                                                |
+| **Exit**       | `exit`                                                                                                                                                                                                                      |
