@@ -94,7 +94,7 @@ A student can have 1 or more subjects.
 **Examples:**
 
 - `add n/John Doe p/98765432 e/johndoe@gmail.com a/Clementi Ave 123, Blk 321, #12-345 lvl/P5 sub/math-B sub/science-C+`
-- `add n/Jany Doh p/97862354 e/janydoh@email.com a/Changi St 79, Blk 12, #03-456 lvl/S5 t/Seafood allergy`
+- `add n/Jany Doh p/97862354 e/janydoh@email.com a/Changi St 79, Blk 12, #03-456 lvl/S5 t/seafoodAllergy`
 
 <div markdown="span" class="alert alert-primary">
 **:bulb: Caution:**
@@ -110,6 +110,7 @@ Below are some constraints to follow when inputting parameters.
 <br>  * This allows you to input subject-grade such as `Math-A*`, `Higher Chinese-B3` or `Software Engineering-A-`, where the subject is more than one word and the grade has numbers or special characters.
 <br>  * Note: `SUBJECT` refers to the subject the student is receiving tuition for, while `GRADE` refers to the grade the student obtained for their most recent test on that subject.
 <br>  * E.g. `math-B` indicates that the student is receiving tuition for Mathematics, and obtained a B grade for their most recent test for Mathematics.
+<br>* For `TAG`, the input must be alphanumeric (e.g. must contain only alphabetical characters or numbers) and is not allowed to have spaces.
 </div>
 
 ### Adding new Parents : `addp`
@@ -179,6 +180,7 @@ Also, below are some constraints to follow when inputting parameters.
 <br> _ Format: `username@domain.com`
 <br> _ For `level`, the input must not contain special characters (e.g. `#`, `@`, `!` etc).
 <br> \* For `subject`, the input must follow the format `SUBJECT-GRADE`, as explained in the add command above.
+<br>\* For `tag`, the input must follow the specific formatting explained in the add command above.
 
 </div>
 
