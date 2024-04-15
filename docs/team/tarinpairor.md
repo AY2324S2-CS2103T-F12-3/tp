@@ -29,10 +29,13 @@ Given below are my contributions to the project.
     - Mostly added on to the original README mockup and additional info.
     - Acknowledge the original source of the code.
 
+  * User Guide:
+    - Added documentation for `Table of Contents` correction formatting issues[/#174](https://github.com/AY2324S2-CS2103T-F12-3/tp/pull/174)
+  * Developer Guide:
+    - Updated a PUML diagram to better reflect our app[#35](https://github.com/AY2324S2-CS2103T-F12-3/tp/pull/35)
+
 * **Community**:
 
-  - PRs reviewed (with non-trivial review comments):
-  - Contributed to forum discussions (examples: [1](), [2](), [3]())
-  - Reported bugs and suggestions for other teams in the class (examples: [1](), [2](), [3]())
+  - PRs reviewed (with non-trivial review comments): [/53#](https://github.com/AY2324S2-CS2103T-F12-3/tp/pull/53)
 
 * _{you can add/remove categories in the list above}_
