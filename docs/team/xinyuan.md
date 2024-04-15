@@ -23,7 +23,7 @@ Given below are my contributions to the project.
 
 * **Enhancements to existing features**:
   * Saving and Loading feature [/#46](https://github.com/AY2324S2-CS2103T-F12-3/tp/pull/46)
-    * Added `JsonAdaptedSubject`, `JsonAdaptedStudent`, `JsonAdaptedEvent` and `JsonAdaptedReminder` to ensure all 
+    * Added `JsonAdaptedSubject` and `JsonAdaptedStudent` to ensure all 
     information are saved and loaded properly.
 ---
 * **Code contributed**: [RepoSense link](https://nus-cs2103-ay2324s2.github.io/tp-dashboard/?search=agreatday&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByAuthors&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other&since=2024-02-23&tabOpen=true&tabType=authorship&tabAuthor=agreatdayy&tabRepo=AY2324S2-CS2103T-F12-3%2Ftp%5Bmaster%5D&authorshipIsMergeGroup=false&authorshipFileTypes=docs~functional-code~test-code~other&authorshipIsBinaryFileTypeChecked=false&authorshipIsIgnoredFilesChecked=false)
