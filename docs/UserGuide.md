@@ -28,14 +28,16 @@ Hi Tutors! A warm welcome to our user guide, your companion for navigating and f
 
 ## [Quick start](#table-of-contents)
 
-1. Ensure you have Java `11` or above installed in your Computer.
+1. Ensure you have Java `11` or above installed in your Computer.<br><img src="images/java11.png" width="550px">
 
 1. Download the latest `tutorpro.jar` from [here](https://github.com/AY2324S2-CS2103T-F12-3/tp/releases).
 
 1. Copy the file to the folder you want to use as the _home folder_ for your TutorPro.
 
 1. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar tutorpro.jar` command to run the application.<br>
-   A GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.<br>
+   <img src="images/runJarFile.png" width="450px">
+
+3. A GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.<br>
    ![Ui](images/Ui.png)
 
 1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
