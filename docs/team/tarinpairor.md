@@ -21,7 +21,7 @@ Given below are my contributions to the project.
 
 - Adding to the Person class by adding Parent-related content while contributing to test cases.
 - Modified a `.puml` file to better reflect our product.
-- Increasing test coverage for most of the files.
+- Increasing test coverage for most of the files, including already existing files.
 
 * **Documentation**:
 
