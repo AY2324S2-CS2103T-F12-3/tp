@@ -2,7 +2,7 @@
 
 [![codecov](https://codecov.io/gh/AY2324S2-CS2103T-F12-3/tp/graph/badge.svg?token=6NOAZHAJVS)](https://codecov.io/gh/AY2324S2-CS2103T-F12-3/tp)
 
-![Ui](docs/images/UI.png)
+![Ui](docs/images/Ui.png)
 
 * This is **a CS2103T project by NUS Computing students**.<br>
   Example usages:
