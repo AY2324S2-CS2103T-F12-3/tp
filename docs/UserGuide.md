@@ -91,10 +91,10 @@ Format: `add n/STUDENT_NAME p/PHONE_NUMBER e/EMAIL_ADDRESS a/ADDRESS lvl/EDUCATI
 A student can have 1 or more subjects.
 </div>
 
-
 **Examples:**
-* `add n/John Doe p/98765432 e/johndoe@gmail.com a/Clementi Ave 123, Blk 321, #12-345 lvl/P5 sub/math-B sub/science-C+`
-* `add n/Jany Doh p/97862354 e/janydoh@email.com a/Changi St 79, Blk 12, #03-456 lvl/S5 t/Seafood allergy`
+
+- `add n/John Doe p/98765432 e/johndoe@gmail.com a/Clementi Ave 123, Blk 321, #12-345 lvl/P5 sub/math-B sub/science-C+`
+- `add n/Jany Doh p/97862354 e/janydoh@email.com a/Changi St 79, Blk 12, #03-456 lvl/S5 t/Seafood allergy`
 
 <div markdown="span" class="alert alert-primary">
 **:bulb: Caution:**
@@ -113,12 +113,14 @@ Below are some constraints to follow when inputting parameters.
 </div>
 
 ### Adding new Parents : `addp`
+
 Add a new parent with their details to your TutorPro list.
 
 Format: `addp n/PARENT_NAME p/PHONE_NUMBER e/EMAIL_ADDRESS a/ADDRESS [t/TAG]…`
 
 **Examples:**
-* `addp n/Jonny Doe p/98765432 e/jonnyd@gmail.com a/Clementi Ave 123, Blk 321, #12-345`
+
+- `addp n/Jonny Doe p/98765432 e/jonnyd@gmail.com a/Clementi Ave 123, Blk 321, #12-345`
 
 <div markdown="span" class="alert alert-primary">
 **:bulb: Caution:**
@@ -134,6 +136,7 @@ Below are some constraints to follow when inputting parameters.
 Edit and/or update a particular person’s details/progress.
 
 Format: `edit INDEX cat/NEW_INFORMATION`
+
 - `INDEX` refers to list index of the person to be edited.
 - `cat/` refers to the command prefix of the category that you want to edit. You can edit more than one category in the same command.
   - For name: `n/`
@@ -146,10 +149,12 @@ Format: `edit INDEX cat/NEW_INFORMATION`
 
 **Examples:**
 For the example list shown below:
+
 1. John Doe, P5, Math-B
 2. Jany Doh, S1, Science-C
-* `edit 1 sub/Math-A` Edits the subject John Doe is being tutored for and his grade to `Math` and `A` respectively.
-* `edit 2 lvl/S2` Edits the education level of Jany Doh to `S2`.
+
+- `edit 1 sub/Math-A` Edits the subject John Doe is being tutored for and his grade to `Math` and `A` respectively.
+- `edit 2 lvl/S2` Edits the education level of Jany Doh to `S2`.
 
 <div markdown="span" class="alert alert-primary">
 **:bulb: Caution:**
@@ -165,15 +170,16 @@ When editing categories that the person does not have (e.g. Parents will not hav
 Also, below are some constraints to follow when inputting parameters.
 <br>
 **Constraints:**
-<br>* For `CATEGORY`, the input must be one of the following:
-<br>  * `name`, `number`, `email`, `address`, `level`, `subject` or `tags`
-<br>* For `NEW_INFORMATION`, the input format depends on the category
-<br>  * For `name`, capitalization (e.g. `jOhN DoE`) or extra/leading/trailing spaces does not affect the value (e.g. `John     Doe`). The NAME should not have special characters (e.g. `#`, `@`, `!` etc.).
-<br>  * For `phone number`, the input must be an 8-digit number and unique.
-<br>  * For `email`, the input must consist of the username and the domain name of the email service provider. It must also be unique.
-<br>    * Format: `username@domain.com`
-<br>  * For `level`, the input must not contain special characters (e.g. `#`, `@`, `!` etc).
-<br>  * For `subject`, the input must follow the format `SUBJECT-GRADE`, as explained in the add command above.
+<br>_ For `CATEGORY`, the input must be one of the following:
+<br> _ `name`, `number`, `email`, `address`, `level`, `subject` or `tags`
+<br>_ For `NEW_INFORMATION`, the input format depends on the category
+<br> _ For `name`, capitalization (e.g. `jOhN DoE`) or extra/leading/trailing spaces does not affect the value (e.g. `John     Doe`). The NAME should not have special characters (e.g. `#`, `@`, `!` etc.).
+<br> _ For `phone number`, the input must be an 8-digit number and unique.
+<br> _ For `email`, the input must consist of the username and the domain name of the email service provider. It must also be unique.
+<br> _ Format: `username@domain.com`
+<br> _ For `level`, the input must not contain special characters (e.g. `#`, `@`, `!` etc).
+<br> \* For `subject`, the input must follow the format `SUBJECT-GRADE`, as explained in the add command above.
+
 </div>
 
 ### Deleting existing Students : `delete`
@@ -183,6 +189,7 @@ Deletes the person at the specified index from your list of contacts.
 Format: `delete LIST_NUMBER`
 
 **Example:**
+
 1. John Doe, 98765432, Clementi Ave 123…, P5, Math-B
 2. Johnny, 91234567, Jurong…, P5, Science-B
 3. Johnsy Boy, 83947237, <address>..., P3, English-C
@@ -206,9 +213,10 @@ The entire word (i.e. `John` instead of `Joh`) should be inputted for this comma
 Format: `find NAME`
 
 **Examples:**
-* `find John Doe`
-* `find john`
-* `find dOE`
+
+- `find John Doe`
+- `find john`
+- `find dOE`
 
 <div markdown="span" class="alert alert-primary">
 **:bulb: Caution:**
@@ -226,8 +234,9 @@ Add events to your schedule.<br>
 Format: `event n/NAME at/TIME h/HOURS [t/TAG]...`
 
 **Examples:**
-* `event n/Bob math tutoring at/2024-03-04 12:00 h/2 t/math t/tutoring`
-* `event n/John Doe science tutoring at/2024-10-10 14:00 h/1`
+
+- `event n/Bob math tutoring at/2024-03-04 12:00 h/2 t/math t/tutoring`
+- `event n/John Doe science tutoring at/2024-10-10 14:00 h/1`
 
 <div markdown="span" class="alert alert-primary">
 **:bulb: Caution:**
@@ -245,7 +254,8 @@ Set reminders for important deadlines or milestones(e.g. O-Levels, A-Levels).<br
 Format: `remind n/DESCRIPTION at/TIME t/TAG`
 
 **Example:**
-* `remind n/Bob uni app deadline at/2024-03-04 12:00 t/urgent`
+
+- `remind n/Bob uni app deadline at/2024-03-04 12:00 t/urgent`
 
 <div markdown="span" class="alert alert-primary">
 **:bulb: Caution:**
@@ -295,9 +305,10 @@ If no number of days is specified, events and reminders that occur in the next 1
 Format: `schedule [NUMBER_OF_DAYS]`
 
 **Example:**
-* `schedule 10`
+
+- `schedule 10`
   Displays your schedule (consisting of all your events and reminders) for the next 10 days.
-* `schedule`
+- `schedule`
   Displays your schedule for the next 14 days.
 
 ---
@@ -320,15 +331,15 @@ Format: `schedule [NUMBER_OF_DAYS]`
 
 ## [Command summary](#table-of-contents)
 
-| Action       | Format, Examples                                                                                                                                                                                                           |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Add**      | `add STUDENT_NAME p/PHONE_NUMBER a/ADDRESS lvl/EDUCATION_LEVEL [sub/SUBJECT-GRADE]… [t/TAG]…​` <br> e.g. `add John Doe p/98765432 e/johndoe@gmail.com a/Clementi Ave 123, Blk 321 #10-234 lvl/p5 sub/Math-B sub/Science-B` |
-| **Add parent**      | `add PARENT_NAME p/PHONE_NUMBER a/ADDRESS [t/TAG]…​` <br> e.g. `addp n/Jonny Doe p/98765432 e/jonnyd@gmail.com a/Clementi Ave 123, Blk 321, #12-345` |
-| **Clear**    | `clear`                                                                                                                                                                                                                    |
-| **Delete**   | `delete LIST_NUMBER` <br> e.g. `delete 3`                                             |
-| **Edit**     | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [lvl/EDUCATION_LEVEL] [sub/SUBJECT-GRADE]… [t/TAG]…​`<br> e.g.`edit 2 n/James Lee e/jameslee@example.com`<br> e.g.`edit 5 sub/math-b sub/biology-c+`              |
-| **Find**     | `find KEYWORD [MORE_KEYWORDS]`<br> e.g. `find James Jake`                                                                                                                                                                  |
-| **List**     | `list`                                                                                                                                                                                                                     |
-| **Help**     | `help`                                                                                                                                                                                                                     |
-| **Event**    | `event n/NAME at/TIME h/HOURS [t/TAG]...` <br> e.g. `event n/John Doe science tutoring at/2024-10-10 h/1`                                                                                                                  |
-| **Remind**   | `remind n/DESCRIPTION at/TIME t/TAG` <br> e.g. `remind n/Bob uni app deadline at/2024-03-04 12:00 t/urgent`                                                                                                                |
+| Action         | Format, Examples                                                                                                                                                                                                           |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Add**        | `add STUDENT_NAME p/PHONE_NUMBER a/ADDRESS lvl/EDUCATION_LEVEL [sub/SUBJECT-GRADE]… [t/TAG]…​` <br> e.g. `add John Doe p/98765432 e/johndoe@gmail.com a/Clementi Ave 123, Blk 321 #10-234 lvl/p5 sub/Math-B sub/Science-B` |
+| **Add parent** | `addp PARENT_NAME p/PHONE_NUMBER a/ADDRESS [t/TAG]…​` <br> e.g. `addp n/Jonny Doe p/98765432 e/jonnyd@gmail.com a/Clementi Ave 123, Blk 321, #12-345`                                                                      |
+| **Clear**      | `clear`                                                                                                                                                                                                                    |
+| **Delete**     | `delete LIST_NUMBER` <br> e.g. `delete 3`                                                                                                                                                                                  |
+| **Edit**       | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [lvl/EDUCATION_LEVEL] [sub/SUBJECT-GRADE]… [t/TAG]…​`<br> e.g.`edit 2 n/James Lee e/jameslee@example.com`<br> e.g.`edit 5 sub/math-b sub/biology-c+`           |
+| **Find**       | `find KEYWORD [MORE_KEYWORDS]`<br> e.g. `find James Jake`                                                                                                                                                                  |
+| **List**       | `list`                                                                                                                                                                                                                     |
+| **Help**       | `help`                                                                                                                                                                                                                     |
+| **Event**      | `event n/NAME at/TIME h/HOURS [t/TAG]...` <br> e.g. `event n/John Doe science tutoring at/2024-10-10 h/1`                                                                                                                  |
+| **Remind**     | `remind n/DESCRIPTION at/TIME t/TAG` <br> e.g. `remind n/Bob uni app deadline at/2024-03-04 12:00 t/urgent`                                                                                                                |
