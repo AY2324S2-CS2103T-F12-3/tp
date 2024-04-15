@@ -177,8 +177,9 @@ public class UniquePersonListTest {
     @Test
     public void equals_sameObject_returnsTrue() {
 
+        UniquePersonList uniquePersonListCopy = uniquePersonList;
         // same object -> returns true
-        assertTrue(uniquePersonList.equals(uniquePersonList));
+        assertTrue(uniquePersonList.equals(uniquePersonListCopy));
 
         // null -> returns false
         assertFalse(uniquePersonList.equals(null));
@@ -190,5 +191,10 @@ public class UniquePersonListTest {
     @Test
     public void toStringMethod() {
         assertEquals(uniquePersonList.asUnmodifiableObservableList().toString(), uniquePersonList.toString());
+    }
+
+    @Test
+    public void hashCodeMethod() {
+        assertEquals(uniquePersonList.asUnmodifiableObservableList().hashCode(), uniquePersonList.hashCode());
     }
 }
