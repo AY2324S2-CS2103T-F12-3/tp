@@ -129,9 +129,9 @@ Below are some constraints to follow when inputting parameters.
 <br>* For `PHONE_NUMBER`, the input must be an 8-digit number
 </div>
 
-### Editing a Student's details : `edit`
+### Editing a Person's details : `edit`
 
-Edit and/or update a particular student’s details/progress.
+Edit and/or update a particular person’s details/progress.
 
 Format: `edit INDEX cat/NEW_INFORMATION`
 - `INDEX` refers to list index of the person to be edited.
@@ -159,6 +159,8 @@ Editing the `subject` and `tag` categories will replace existing subjects and ta
 - Edit command: `sub/science-C`<br>
 - New subjects: science-c <br>
 As you can see, the existing information will be replaced with new information by you.
+
+When editing categories that the person does not have (e.g. Parents will not have subjects), the command will ignore these categories.
 <br>
 Also, below are some constraints to follow when inputting parameters.
 <br>
